@@ -1,0 +1,58 @@
+(function () {
+    let tmpl = document.createElement("template");
+    tmpl.innerHTML = `
+      <style>
+          fieldset {
+              margin-bottom: 10px;
+              border: 1px solid #afafaf;
+              border-radius: 3px;
+          }
+          table {
+              width: 100%;
+          }
+          input, textarea, select {
+              font-family: "72",Arial,Helvetica,sans-serif;
+              width: 100%;
+              padding: 4px;
+              box-sizing: border-box;
+              border: 1px solid #bfbfbf;
+          }
+          input[type=checkbox] {
+              width: 100px;
+              margin: 6px 3px 6px 0;
+              vertical-align: middle;
+          }
+      </style>
+      <form id="form" autocomplete="off">
+        <fieldset> 
+          <legend>General</legend>
+          <table>
+            <tr>
+              <td><label for="Title">Title</label></td>
+              <td><input id="title" name="title" type="text"></td>
+            </tr>
+            <tr>
+              <td><label for="Sub Title">Sub Title</label></td>
+              <td><input id="subtitle" name="subtitle" type="text"></td>
+            </tr>
+            <tr>
+              <td><label for="Icon">Icon</label></td>
+              <td><input id="icon" name="icon" type="text"></td>
+            </tr>
+            <tr>
+              <td><label for="Unit">Unit</label></td>
+              <td><input id="unit" name="unit" type="text"></td>
+            </tr>
+            <tr>
+              <td><label for="Footer">Footer</label></td>
+              <td><input id="footer" name="footer" type="text"></td>
+            </tr>
+          </table>
+        </fieldset>
+        <button type="submit" hidden>Submit</button>
+      </form>
+    `;
+    
+    
+    
+    })();
