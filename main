@@ -5,7 +5,7 @@ sap.ui.define([
 	var oPageController = Controller.extend("sap.suite.ui.commons.sample.NetworkGraphStaticForce.NetworkGraph", {
 		onInit: function () {
 			var oModel = new JSONModel(sap.ui.require.toUrl(
-				"sap/suite/ui/commons/sample/NetworkGraphStaticForce/graph.json"));
+				"https://dianaelenam.github.io/tests.github.io/graphdata.json"));
 			oModel.setSizeLimit(Number.MAX_SAFE_INTEGER);
 			this.getView().setModel(oModel);
 
